@@ -36,7 +36,6 @@
           python = "python311";
         };
         python_requirements = ''
-          solidpython_ff
           jupyter
 	        pandas
 	        numpy
