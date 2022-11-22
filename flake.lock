@@ -1,0 +1,180 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1667395993,
+        "narHash": "sha256-nuEHfE/LcWyuSWnS8t12N1wc105Qtau+/OdUAjtQ0rA=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "5aed5285a952e0b949eb3ba02c12fa4fcfef535f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "flake-utils_2": {
+      "locked": {
+        "lastModified": 1659877975,
+        "narHash": "sha256-zllb8aq3YO3h8B/U0/J1WBgAL8EX5yWf5pMj3G0NAmc=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "c0e246b9b83f637f4681389ecabcb2681b4f3af0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "mach-nix": {
+      "inputs": {
+        "flake-utils": [
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "pypi-deps-db": [
+          "pypi-deps-db"
+        ]
+      },
+      "locked": {
+        "lastModified": 1655670309,
+        "narHash": "sha256-BpFY3YKt6JkWeK94IpIS+qnRhqDHPWZDhXMJYMZwpYc=",
+        "owner": "DavHau",
+        "repo": "mach-nix",
+        "rev": "7e84a4e8fe088449abfa22476ad35c6cf493cad1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "DavHau",
+        "repo": "mach-nix",
+        "rev": "7e84a4e8fe088449abfa22476ad35c6cf493cad1",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1653936696,
+        "narHash": "sha256-M6bJShji9AIDZ7Kh7CPwPBPb/T7RiVev2PAcOi4fxDQ=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "ce6aa13369b667ac2542593170993504932eb836",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "22.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgsPy36": {
+      "locked": {
+        "lastModified": 1601475821,
+        "narHash": "sha256-7AI8j/xq5slauMGwC3Dp2K9TKDyDtBXBebeyWsE9euE=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "b4db68ff563895eea6aab4ff24fa04ef403dfe14",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "rev": "b4db68ff563895eea6aab4ff24fa04ef403dfe14",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1665296151,
+        "narHash": "sha256-uOB0oxqxN9K7XGF1hcnY+PQnlQJ+3bP2vCn/+Ru/bbc=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "14ccaaedd95a488dd7ae142757884d8e125b3363",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "pypi-deps-db": {
+      "inputs": {
+        "mach-nix": [
+          "mach-nix"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "nixpkgsPy36": "nixpkgsPy36",
+        "pypiIndex": "pypiIndex"
+      },
+      "locked": {
+        "lastModified": 1665608574,
+        "narHash": "sha256-HkezwBREgxxFS6mSYGnWaVTdDZIvtmf5GLR2ygx6TFI=",
+        "owner": "DavHau",
+        "repo": "pypi-deps-db",
+        "rev": "99323880924a90acd689a4f23b56551d06d3f780",
+        "type": "github"
+      },
+      "original": {
+        "owner": "DavHau",
+        "repo": "pypi-deps-db",
+        "rev": "99323880924a90acd689a4f23b56551d06d3f780",
+        "type": "github"
+      }
+    },
+    "pypiIndex": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1665595746,
+        "narHash": "sha256-LjQ4c0dGF45rWf1Q9/lSymSQ/MHfjKeDweD/WPYADL0=",
+        "owner": "davhau",
+        "repo": "nix-pypi-fetcher",
+        "rev": "f6531021f49ed4572e8da75f3e49b6ced811ee82",
+        "type": "github"
+      },
+      "original": {
+        "owner": "davhau",
+        "repo": "nix-pypi-fetcher",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "mach-nix": "mach-nix",
+        "nixpkgs": "nixpkgs",
+        "pypi-deps-db": "pypi-deps-db",
+        "rust-overlay": "rust-overlay"
+      }
+    },
+    "rust-overlay": {
+      "inputs": {
+        "flake-utils": "flake-utils_2",
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1669084742,
+        "narHash": "sha256-aLYwYVnrmEE1LVqd17v99CuqVmAZQrlgi2DVTAs4wFg=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "9652ef34c7439eca9f86cee11e94dbef5c9adb09",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
