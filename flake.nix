@@ -40,7 +40,7 @@
 	        pandas
 	        numpy
 	        pybigwig
-          dppd_plotnine
+          #dppd_plotnine
 	        openpyxl
 	        requests
 	        requests[socks]
